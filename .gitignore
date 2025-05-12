@@ -1,0 +1,18 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore logs and database files
+*.log
+*.sqlite3
+
+# Ignore system files
+.DS_Store
+
+# Ignore latest fashion JSON (Optional)
+latest_fashion.json
