@@ -12,10 +12,10 @@ async def favicon():
 @app.get("/all_products")
 async def get_latest_trends():
     try:
-        if not os.path.exists("all_products.json"):
-            raise HTTPException(status_code=404, detail="all_products.json not found")
+        if not os.path.exists("latest_batch.json"):
+            raise HTTPException(status_code=404, detail="latest_batch.json not found")
         
-        with open("all_products.json", "r") as f:
+        with open("latest_batch.json", "r") as f:
             data = json.load(f)
         
         return data
